@@ -13,10 +13,10 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NBA Basketball Stars - Play Free Online NBA Basketball Game | StarBallGame</title>
+    <title>NBA Basketball Stars - Play Free Online Basketball Game with NBA Superstars | StarBallGame</title>
     <meta name="description"
-        content="Play NBA Basketball Stars online for free. Enjoy this exciting basketball game featuring your favorite NBA stars. Perfect entertainment when NBA playoffs are over and your favorite players are on vacation!">
-    <meta name="keywords" content="NBA game, basketball stars, NBA players, basketball simulation, free NBA game, sports game, NBA playoffs alternative">
+        content="Missing NBA action after your favorite team got eliminated? Play NBA Basketball Stars online for free! Experience NBA-style basketball with superstar players while your favorite NBA stars are on vacation. Perfect basketball gaming fix during the offseason!">
+    <meta name="keywords" content="NBA games, basketball stars, online basketball game, NBA playoffs, basketball simulation, free basketball game, NBA superstars game">
     <link rel="canonical" href="https://starballgame.shop/">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -27,30 +27,26 @@
                         nba: {
                             blue: '#17408B',
                             red: '#C9082A',
-                            white: '#FFFFFF',
-                            black: '#000000',
-                            orange: '#F58426',
-                            gray: {
-                                light: '#F2F2F7',
-                                medium: '#E5E5EA',
-                                dark: '#8E8E93'
-                            }
+                            gold: '#FFCD00',
+                            dark: '#17161A',
+                            light: '#F9F9F9'
                         }
-                    },
-                    backgroundImage: {
-                        'court-pattern': "url('https://www.transparenttextures.com/patterns/basketball.png')"
                     }
                 }
             }
         }
     </script>
     <style type="text/css">
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #F2F2F7;
-            background-image: url('https://www.transparenttextures.com/patterns/basketball.png');
+            background-image: url('https://images.unsplash.com/photo-1546519638-68e109acd618?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-blend-mode: overlay;
         }
 
         .game-container {
@@ -65,31 +61,26 @@
             height: 100%;
             border: none;
             border-radius: 12px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+        }
+
+        .nba-gradient {
+            background: linear-gradient(135deg, #17408B 0%, #C9082A 100%);
         }
 
         .more-games-btn {
-            background: linear-gradient(135deg, #17408B, #C9082A);
-            color: white;
-            font-weight: bold;
-            padding: 12px 24px;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            display: inline-block;
-            margin: 20px auto;
-            text-align: center;
             animation: pulse 2s infinite;
+            transition: all 0.3s ease;
         }
 
         .more-games-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
         }
 
         @keyframes pulse {
             0% {
-                box-shadow: 0 0 0 0 rgba(201, 8, 42, 0.4);
+                box-shadow: 0 0 0 0 rgba(201, 8, 42, 0.7);
             }
             70% {
                 box-shadow: 0 0 0 10px rgba(201, 8, 42, 0);
@@ -97,12 +88,6 @@
             100% {
                 box-shadow: 0 0 0 0 rgba(201, 8, 42, 0);
             }
-        }
-
-        .nba-gradient {
-            background: linear-gradient(90deg, #17408B, #C9082A);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
         }
 
         @media (max-width: 640px) {
@@ -114,7 +99,7 @@
 </head>
 
 <body>
-    <header class="bg-nba-blue text-white shadow-lg">
+    <header class="nba-gradient text-white shadow-lg">
         <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
             <div class="text-center md:text-left mb-4 md:mb-0">
                 <a href="/" class="text-2xl font-bold">NBA StarBallGame</a>
@@ -122,10 +107,9 @@
             </div>
             <nav>
                 <ul class="flex space-x-6">
-                    <li><a href="#" class="hover:text-nba-gray-medium transition">Home</a></li>
-                    <li><a href="#about" class="hover:text-nba-gray-medium transition">About</a></li>
-                    <li><a href="#controls" class="hover:text-nba-gray-medium transition">Controls</a></li>
-                    <li><a href="#nba-stars" class="hover:text-nba-gray-medium transition">NBA Stars</a></li>
+                    <li><a href="#" class="hover:text-nba-gold transition font-medium">Home</a></li>
+                    <li><a href="#about" class="hover:text-nba-gold transition font-medium">About</a></li>
+                    <li><a href="#controls" class="hover:text-nba-gold transition font-medium">Controls</a></li>
                 </ul>
             </nav>
         </div>
@@ -133,11 +117,18 @@
 
     <main class="container mx-auto px-4 py-8">
         <section class="text-center mb-10">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4 nba-gradient">NBA Basketball Stars</h1>
-            <p class="text-xl text-gray-700 max-w-3xl mx-auto">Experience the thrill of NBA basketball with stunning
-                graphics and intuitive controls in this action-packed sports game!</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-nba-blue mb-4">NBA Basketball Stars</h1>
+            <p class="text-xl text-gray-700 max-w-3xl mx-auto bg-white bg-opacity-80 p-4 rounded-lg">
+                Missing NBA action after playoff eliminations? While your favorite stars are on fishing trips, 
+                keep the basketball excitement alive with our NBA-inspired game!
+            </p>
+            
+            <!-- More Games Button -->
             <div class="mt-6">
-                <a href="https://games.astroprospector.online/" class="more-games-btn" target="_blank">更多游戏，请点击这里</a>
+                <a href="https://games.astroprospector.online/" target="_blank" 
+                   class="more-games-btn inline-block bg-nba-red hover:bg-nba-blue text-white text-xl font-bold py-3 px-8 rounded-full transition">
+                   More Games, Click Here!
+                </a>
             </div>
         </section>
 
@@ -152,45 +143,19 @@
             <h2 class="text-2xl font-bold text-nba-blue mb-4">About NBA Basketball Stars</h2>
             <div class="grid md:grid-cols-2 gap-8">
                 <div>
-                    <p class="mb-4">NBA Basketball Stars is an exciting online basketball game that lets you experience the
-                        thrill of NBA matches right from your browser. When the NBA playoffs are over and your favorite players
-                        are on vacation fishing, this game is the perfect alternative to satisfy your basketball cravings!</p>
-                    <p>The game features various NBA superstars with unique abilities and skills modeled after real NBA players.
-                       You can play in different game modes including quick matches, tournaments, and practice sessions to improve your
-                       skills.</p>
+                    <p class="mb-4">NBA Basketball Stars brings the excitement of professional basketball to your screen when the real NBA season is on break. Missing basketball after your team got eliminated from the playoffs? While the NBA superstars are enjoying their fishing trips and vacations, you can still enjoy basketball action with our exciting game!</p>
+                    <p>The game features characters inspired by various NBA superstars with unique abilities and skills that mirror their real-life counterparts. Play in different game modes including quick matches, tournaments, and practice sessions to improve your skills.</p>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold text-nba-orange mb-3">Game Features</h3>
+                    <h3 class="text-xl font-semibold text-nba-red mb-3">Game Features</h3>
                     <ul class="list-disc pl-5 space-y-2">
-                        <li>Exciting 1v1 and 2v2 NBA-style basketball matches</li>
-                        <li>Multiple playable NBA-inspired characters with unique abilities</li>
-                        <li>Various NBA-themed basketball courts and environments</li>
+                        <li>Exciting 1v1 and 2v2 basketball matches with NBA-inspired players</li>
+                        <li>Multiple playable characters with unique abilities like your favorite NBA stars</li>
+                        <li>Various basketball courts and environments reminiscent of famous NBA arenas</li>
                         <li>Intuitive controls for shooting, dribbling, and defending</li>
-                        <li>Realistic physics and animations based on real NBA player movements</li>
-                        <li>Challenge your friends or play against AI with NBA star abilities</li>
+                        <li>Realistic physics and animations that capture authentic NBA moves</li>
+                        <li>Challenge your friends or play against AI when there's no NBA on TV</li>
                     </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="nba-stars" class="bg-white rounded-xl shadow-md p-6 mb-10">
-            <h2 class="text-2xl font-bold text-nba-blue mb-4">Featured NBA Stars</h2>
-            <p class="mb-6">When your favorite NBA team is eliminated from the playoffs and your star player is on vacation fishing, you can still enjoy playing with these NBA-inspired basketball stars:</p>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-nba-gray-light p-4 rounded-lg border-l-4 border-nba-blue">
-                    <h3 class="text-xl font-semibold mb-2">King James</h3>
-                    <p class="mb-2">Inspired by the legendary all-around player known for his court vision and powerful drives to the basket.</p>
-                    <p><strong>Special Ability:</strong> Court Vision - enhanced passing and team boost</p>
-                </div>
-                <div class="bg-nba-gray-light p-4 rounded-lg border-l-4 border-nba-red">
-                    <h3 class="text-xl font-semibold mb-2">Chef Curry</h3>
-                    <p class="mb-2">Based on the greatest shooter in basketball history with unlimited range and quick release.</p>
-                    <p><strong>Special Ability:</strong> Long Range - increased shooting accuracy from distance</p>
-                </div>
-                <div class="bg-nba-gray-light p-4 rounded-lg border-l-4 border-nba-orange">
-                    <h3 class="text-xl font-semibold mb-2">Greek Freak</h3>
-                    <p class="mb-2">Inspired by the athletic marvel known for his length, speed, and defensive prowess.</p>
-                    <p><strong>Special Ability:</strong> Euro Step - enhanced driving and finishing ability</p>
                 </div>
             </div>
         </section>
@@ -199,7 +164,7 @@
             <h2 class="text-2xl font-bold text-nba-blue mb-4">Game Controls</h2>
             <div class="grid md:grid-cols-2 gap-8">
                 <div>
-                    <h3 class="text-xl font-semibold text-nba-red mb-3">Player 1</h3>
+                    <h3 class="text-xl font-semibold text-nba-gold mb-3">Player 1</h3>
                     <ul class="space-y-2">
                         <li><span class="font-bold">W, A, S, D:</span> Move player</li>
                         <li><span class="font-bold">G:</span> Shoot the ball</li>
@@ -207,7 +172,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold text-nba-red mb-3">Player 2</h3>
+                    <h3 class="text-xl font-semibold text-nba-gold mb-3">Player 2</h3>
                     <ul class="space-y-2">
                         <li><span class="font-bold">Arrow Keys:</span> Move player</li>
                         <li><span class="font-bold">K:</span> Shoot the ball</li>
@@ -220,10 +185,10 @@
         <section class="bg-white rounded-xl shadow-md p-6 mb-10">
             <h2 class="text-2xl font-bold text-nba-blue mb-4">How to Play NBA Basketball Stars</h2>
             <div class="space-y-4">
-                <p>NBA Basketball Stars is easy to learn but challenging to master. Here's how to get started:</p>
+                <p>NBA Basketball Stars is easy to learn but challenging to master, just like the real game. Here's how to get started:</p>
                 <ol class="list-decimal pl-5 space-y-2">
                     <li>Select your preferred game mode (1v1 or 2v2)</li>
-                    <li>Choose your favorite NBA-inspired basketball player</li>
+                    <li>Choose your basketball player character inspired by NBA superstars</li>
                     <li>Use the controls to move around the court</li>
                     <li>Press the shoot button when you're in a good position</li>
                     <li>Time your shots perfectly for better accuracy</li>
@@ -231,62 +196,64 @@
                     <li>Score more points than your opponent to win the match</li>
                 </ol>
                 <p class="mt-4">Practice makes perfect! The more you play, the better you'll become at timing your shots
-                    and executing defensive moves just like real NBA stars.</p>
+                    and executing defensive moves, just like real NBA stars.</p>
             </div>
         </section>
 
-        <section class="bg-white rounded-xl shadow-md p-6">
+        <section class="bg-white rounded-xl shadow-md p-6 mb-10">
             <h2 class="text-2xl font-bold text-nba-blue mb-4">Why NBA Basketball Stars is Popular</h2>
             <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-nba-gray-light p-4 rounded-lg">
-                    <h3 class="text-xl font-semibold text-nba-blue mb-2">NBA-Inspired Gameplay</h3>
-                    <p>The fast-paced action and responsive controls make every match exciting and unpredictable, just like real NBA games.</p>
+                <div class="bg-nba-light p-4 rounded-lg border-l-4 border-nba-blue">
+                    <h3 class="text-xl font-semibold text-nba-blue mb-2">NBA-Style Action</h3>
+                    <p>The fast-paced gameplay captures the excitement of real NBA games, perfect for the offseason when your favorite stars are on vacation.</p>
                 </div>
-                <div class="bg-nba-gray-light p-4 rounded-lg">
-                    <h3 class="text-xl font-semibold text-nba-blue mb-2">Off-Season Entertainment</h3>
-                    <p>When the NBA playoffs are over and your favorite players are on vacation, this game keeps the basketball excitement alive.</p>
+                <div class="bg-nba-light p-4 rounded-lg border-l-4 border-nba-red">
+                    <h3 class="text-xl font-semibold text-nba-red mb-2">Superstar Experience</h3>
+                    <p>Play with characters inspired by NBA legends and current stars, with signature moves and abilities.</p>
                 </div>
-                <div class="bg-nba-gray-light p-4 rounded-lg">
-                    <h3 class="text-xl font-semibold text-nba-blue mb-2">Multiplayer Fun</h3>
-                    <p>Challenge your friends or play against players from around the world for the ultimate NBA-style basketball
-                        showdown.</p>
+                <div class="bg-nba-light p-4 rounded-lg border-l-4 border-nba-gold">
+                    <h3 class="text-xl font-semibold text-nba-gold mb-2">Always Available</h3>
+                    <p>Even when the NBA season is over and players are fishing, you can still enjoy basketball action anytime!</p>
                 </div>
             </div>
-            <div class="text-center mt-8">
-                <a href="https://games.astroprospector.online/" class="more-games-btn" target="_blank">更多游戏，请点击这里</a>
+            
+            <!-- Secondary More Games Button -->
+            <div class="mt-8 text-center">
+                <a href="https://games.astroprospector.online/" target="_blank" 
+                   class="inline-block bg-nba-blue hover:bg-nba-red text-white font-bold py-2 px-6 rounded-lg transition">
+                   Explore More Games
+                </a>
             </div>
         </section>
     </main>
 
-    <footer class="bg-nba-blue text-white py-8">
+    <footer class="nba-gradient text-white py-8">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-3 gap-8">
                 <div>
                     <h2 class="text-xl font-bold mb-4">NBA StarBallGame</h2>
-                    <p>Your destination for the best online NBA basketball gaming experience. Play NBA Basketball Stars and
-                        other exciting sports games for free!</p>
+                    <p>Your destination for the best online basketball gaming experience while waiting for the next NBA season. Play NBA Basketball Stars and other exciting sports games for free!</p>
                 </div>
                 <div>
                     <h2 class="text-xl font-bold mb-4">Quick Links</h2>
                     <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-nba-gray-medium transition">Home</a></li>
-                        <li><a href="#about" class="hover:text-nba-gray-medium transition">About the Game</a></li>
-                        <li><a href="#controls" class="hover:text-nba-gray-medium transition">Game Controls</a></li>
-                        <li><a href="#nba-stars" class="hover:text-nba-gray-medium transition">NBA Stars</a></li>
-                        <li><a href="https://games.astroprospector.online/" class="hover:text-nba-gray-medium transition" target="_blank">更多游戏</a></li>
+                        <li><a href="#" class="hover:text-nba-gold transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-nba-gold transition">About the Game</a></li>
+                        <li><a href="#controls" class="hover:text-nba-gold transition">Game Controls</a></li>
+                        <li><a href="https://games.astroprospector.online/" target="_blank" class="hover:text-nba-gold transition font-bold">More Games</a></li>
                     </ul>
                 </div>
                 <div>
                     <h2 class="text-xl font-bold mb-4">Legal</h2>
                     <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-nba-gray-medium transition">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-nba-gray-medium transition">Terms of Service</a></li>
-                        <li><a href="#" class="hover:text-nba-gray-medium transition">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-nba-gold transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-nba-gold transition">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-nba-gold transition">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
             <div class="mt-8 pt-6 border-t border-blue-700 text-center">
-                <p>&copy; 2024 NBA StarBallGame.shop. All rights reserved.</p>
+                <p>&copy; 2024 StarBallGame.shop. All rights reserved. Not affiliated with the NBA.</p>
             </div>
         </div>
     </footer>
